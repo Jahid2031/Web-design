@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: slategray;
+}
+header {
+  background-color: cadetblue;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+}
+.logo a {
+  text-decoration: none;
+  padding-top: 10px;
+  display: block;
+}
+
+ul {
+  background-color: cadetblue;
+  text-align: right;
+}
+ul li {
+  display: inline-block;
+  padding: 20px;
+}
+li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+ul li:hover {
+  background-color: cornsilk;
+  transition: 0.7s;
+}
+.banner-section {
+  background-image: url("img/Cover.png");
+  background-position: auto center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.banner-section::after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: -1;
+}
+.banner {
+  text-align: center;
+  padding: 200px;
+}
+.banner h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.banner p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.banner a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: skyblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.banner a:hover{
+  background-color: darkgoldenrod;
+  color: blue;
+  transition: 0.7s;
+}
+/* about section */
+.header-section{
+    margin: 70px 0;
+    overflow: hidden;
+}
+.name-section {
+  text-align: center;
+  background-color: slateblue;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.left-section {
+  background-image: url("img/about.png");
+  background-position: auto center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  position: relative;
+  z-index: 1;
+}
+.left-section::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: -1;
+}
+
+.left-section {
+  width: 48%;
+  float: left;
+  margin-right: 20px;
+  padding: 20px;
+}
+.right-section {
+  width: 48%;
+  float: left;
+}
+label {
+  font-size: 20px;
+  color: thistle;
+}
+.first {
+  width: 47%;
+  float: left;
+  margin-right: 14px;
+}
+
+.last {
+  width: 50%;
+  float: left;
+}
+.input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.row1 {
+  margin: 20px;
+}
+.age {
+  width: 50%;
+  float: left;
+}
+.country {
+  width: 50%;
+  float: left;
+}
+button {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  color: tomato;
+  background-color:cornflowerblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: blue;
+  color: red;
+  transition: 1s;
+}
+input:focus{
+    outline: none;
+}
+.Right-section p{
+    text-align: justify;
+    line-height: 30px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:10px 15px;
+  text-align: center;
+}
+caption{
+  font-size: 20px;
+  border: 1px red solid;
+  padding: 10px 15px;
+  background-color: chartreuse;
+}
+.blue{
+  background-color: blue;
+  color: brown;
+  font-size: 20px;
+}
+.yellow{
+  background-color:yellow;
+  color: black;
+  font-size: 20px;
+}
+.green{
+  background-color:green;
+  color: black;
+  font-size: 20px;
+}
+.red{
+  background-color:red;
+  color: black;
+  font-size: 20px;
+}
+
+.pink{
+  background-color:palevioletred;
+  color: black;
+  font-size: 20px;
+}
+
+.gray{
+  background-color:rosybrown;
+  color: black;
+  font-size: 20px;
+}
+
+.table{
+  width: 48%;
+  float: right;
+  margin-left: 10px;
+
+}
+
+.Lorem{
+  width: 50%;
+  float: right;
+  color:yellowgreen;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+  white-space: 10px;
+  text-align: justify;;
+}
+
+.heading-section{
+  margin: 70px 0;
+  overflow: hidden;
+}
+
+.image img{
+  width: 100%;  
+}
+
+.image{
+  width: 25%;
+  float: left;
+  padding-left:10px ;
+}
+.team-info img{
+  width: 100%;
+  border-radius: 50%;
+}
+.team-info{
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.team-info h3{
+  font-size: 30px;
+  color: aquamarine;
+}
+.team-info h5{
+  font-size: 15px;
+  color: aquamarine;
+}
+.footer-text{
+  text-align: center;
+  background-color: crimson;
+  padding: 20px 30px;
+}
